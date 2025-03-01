@@ -11,6 +11,12 @@ This project provides an advanced profanity censorship and speech processing too
 - **Artificial Voice Regeneration:** Uses text-to-speech (TTS) to generate a cleaned-up version of the input speech without offensive words.
 - **Portable:** The required profanity dataset is embedded within the code, eliminating external dependencies.
 
+ ## Dataset and Labeling
+-A profanity dataset was used to identify offensive words.
+-The NLTK words dataset was used to extract a large vocabulary of non-profane words.
+-Words found in the profanity dataset were labeled as 1 (profane), while all other words were labeled as 0 (non-profane).
+-This labeled dataset was used to train the profanity detection model.
+
 ## Performance and Accuracy
 The model was tested on a labeled profanity dataset and achieved the following results:
 
