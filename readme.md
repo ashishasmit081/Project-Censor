@@ -45,26 +45,7 @@ Weighted Avg       0.99      0.92      0.95    237389
 - **Beep Sound Generation:** NumPy
 - **Data Handling:** Pandas, NLTK
 
-## Installation and Usage
-1. Install dependencies:
-   ```sh
-   pip install numpy pandas nltk speechrecognition pydub gtts scikit-learn joblib
-   ```
 
-2. Download the model (or train it if not available):
-   ```python
-   model = train_or_load_profanity_model("improved_profanity_filter.pkl")
-   ```
-
-3. Run the tool for text input:
-   ```python
-   process_input("This is a f**king bad day!", is_audio=False)
-   ```
-
-4. Run the tool for audio input:
-   ```python
-   process_input("path/to/audio/file.mp3", is_audio=True)
-   ```
 
 ## License
 This project is licensed under the MIT License.
