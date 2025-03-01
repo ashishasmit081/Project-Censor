@@ -29,4 +29,4 @@ This project provides a powerful profanity censorship and speech processing tool
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
