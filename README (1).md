@@ -27,22 +27,6 @@ This project provides a powerful profanity censorship and speech processing tool
 - **NumPy**: Used to generate beep sounds when necessary.
 - **Pandas**: Used for handling and managing the profanity dataset.
 
-## How to Use
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/profanity-censorship-tool.git
-   cd profanity-censorship-tool
-   ```
-2. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the script and follow the instructions:  
-   ```bash
-   python main.py
-   ```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
