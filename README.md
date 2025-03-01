@@ -1,32 +1,51 @@
 # Profanity Censorship and Speech Processing Tool
 
-This project provides a powerful profanity censorship and speech processing tool that can detect and censor profane words from text and speech. It also provides additional functionalities like speech-to-text transcription and generating censored audio using artificial voice generation.
+## Overview
+This project provides an advanced profanity censorship and speech processing tool that detects and censors profane words from both text and speech. It integrates modern machine learning techniques to accurately filter offensive language while maintaining the natural flow of speech.
 
 ## Features
+- **Profanity Detection:** Utilizes a trained Random Forest model with an extensive dataset to identify profane words in text and speech.
+- **Censorship in Audio:** Profane words detected in speech are replaced with a beep sound for censorship.
+- **Speech-to-Text Transcription:** Converts spoken language from audio files into readable text.
+- **Text Censorship:** Profane words in text are masked with asterisks (e.g., "f**k").
+- **Artificial Voice Regeneration:** Uses text-to-speech (TTS) to generate a cleaned-up version of the input speech without offensive words.
+- **Portable:** The required profanity dataset is embedded within the code, eliminating external dependencies.
 
-- **Profanity Detection**: Uses an extensive dataset to detect profane words in text and speech.
-- **Censorship in Audio**: Profane words in speech are replaced with a beep sound.
-- **Speech-to-Text Transcription**: Converts audio input into readable text.
-- **Text Censorship**: Profane words in text are masked with asterisks (e.g., "f**k").
-- **Artificial Voice Regeneration**: Uses text-to-speech to generate a clean version of the input speech.
-- **Portable**: No need for an external dataset; all required data is embedded within the code.
+## Performance and Accuracy
+The model was tested on a labeled profanity dataset and achieved the following results:
+
+- **Model Accuracy:** 92%
+- **Classification Report:**
+
+```
+              Precision    Recall  F1-score   Support
+
+           0       1.00      0.92      0.96    235730
+           1       0.08      0.98      0.15      1659
+
+    Accuracy                           0.92    237389
+   Macro Avg       0.54      0.95      0.56    237389
+Weighted Avg       0.99      0.92      0.95    237389
+```
+
+- **Confusion Matrix Visualization:** A heatmap is generated to analyze the model's misclassification patterns.
 
 ## Applications and Use Cases
+- **Content Moderation:** Automatically filters offensive language on social media, forums, and chat applications.
+- **Educational Use:** Helps in censoring inappropriate language in recorded lectures and educational materials.
+- **Speech-to-Text Services:** Functions as a transcription tool while ensuring clean text output.
+- **Podcast and Media Editing:** Useful for media producers and editors who need to censor offensive language in recorded content.
+- **AI Assistants & Chatbots:** Enhances AI models by preventing offensive speech in generated responses.
 
-- **Content Moderation**: Helps in filtering offensive language from audio and text platforms.
-- **Educational Use**: Can be used in schools to censor inappropriate language in recorded lectures.
-- **Speech-to-Text Services**: Acts as a transcription tool for audio files.
-- **Podcast and Media Editing**: Useful for editors who need to clean up recorded content.
-- **Safe AI Assistants**: Enhances AI assistants by removing offensive speech.
+## Technologies and Dependencies
+- **Machine Learning:** Scikit-learn (Random Forest Classifier)
+- **Speech Processing:** SpeechRecognition (Google API)
+- **Audio Processing:** pydub (for audio file handling and modification)
+- **Text-to-Speech:** gTTS (Google Text-to-Speech API)
+- **Beep Sound Generation:** NumPy
+- **Data Handling:** Pandas, NLTK
 
-## Technologies and APIs Used
 
-- **SpeechRecognition**: For converting speech to text.
-- **pydub**: To process and modify audio files.
-- **gTTS (Google Text-to-Speech)**: For regenerating censored audio.
-- **NumPy**: Used to generate beep sounds when necessary.
-- **Pandas**: Used for handling and managing the profanity dataset.
 
 ## License
-
 This project is licensed under the MIT License.
