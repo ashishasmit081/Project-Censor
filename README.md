@@ -16,7 +16,7 @@ This project provides an advanced profanity censorship and speech processing too
 
 -The NLTK words dataset was used to extract a large vocabulary of non-profane words.
 
--Words found in the profanity dataset were labeled as 1 (profane), while all other words were labeled as 0 (non-profane).
+-Words from NLTK words that were found in the profanity dataset were labeled as 1 (profane), while all other words were labeled as 0 (non-profane).
 
 -This labeled dataset was used to train the profanity detection model.
 
