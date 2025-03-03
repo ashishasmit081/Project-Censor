@@ -56,5 +56,7 @@ Weighted Avg       0.99      0.92      0.95    237389
 
 
 
-## License
-This project is licensed under the MIT License.
+## 📜 License
+Copyright © Ashish Asmit 2025. All rights reserved.
+This repository is proprietary. You may not use, modify, or distribute any part of it without explicit permission.
+---
